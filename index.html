@@ -4,6 +4,7 @@
 	<meta name="viewport" content="with-device-width, initial-scale = 1.0">
 	<title>Kartz || Online Grocery Delivery App</title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style2.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,10 +30,64 @@
 		<div class="text-box">
 			<h1>Online Grocery Shop</h1>
 			<p>Making grocery shopping easy for Butuanon</p>
-			<a href="login.html" class="hero-btn-login">Login</a><br>
+
+			<a class="hero-btn-login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+			
+			
+			<!--<a href="login.html" class="hero-btn-login">Login</a><br>-->
 			<a href="signup.html" class="hero-btn-signup">Sign up</a>
 		</div>
 
+
+
+
+<!---------------  login     ------------------------->
+
+
+<div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="jonas.jpg" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+
+
+
+
+<!------------------------------------------------>
 	</section>
 	<section>
 		<main class="contents">
